@@ -1,12 +1,12 @@
 @mixin body-border {
-  border-radius: 1rem 1rem 7rem 1rem;
+  border-radius: .75rem .75rem 6rem .75rem;
 }
 
 @mixin body-shadow {
     -webkit-box-shadow: -5px 7px 13px 3px rgba(0,0,0,0.5); 
     box-shadow: -5px 7px 13px 3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: inset 4px 4px 7px 8px rgba(58,66,56,0.3); 
-    box-shadow: inset 4px 4px 7px 8px rgba(58,66,56,0.3);
+    -webkit-box-shadow: inset 4px 4px 7px 8px rgba(58,66,56,0.375); 
+    box-shadow: inset 4px 4px 7px 8px rgba(58,66,56,0.375);
 }
 
 @mixin shadow-pop {

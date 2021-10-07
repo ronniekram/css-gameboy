@@ -23,7 +23,6 @@ body {
   }
 
   .gameboy {
-    // margin: auto;
     position: absolute;
     z-index: 0;
     background: $body;
@@ -33,6 +32,18 @@ body {
     left: 20rem;
     @include body-border;
     @include body-shadow;
+  }
+
+  .screen-border {
+    position: absolute;
+    z-index: 1;
+    background: $screenBorder;
+    border-radius: 1rem 1rem 4rem 1rem;
+    border: .75px solid #42454D;
+    min-width: 18rem;
+    min-height: 14rem;
+    top: 8.5rem;
+    left: 22.25rem;
   }
 
 }

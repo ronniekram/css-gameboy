@@ -48,12 +48,23 @@ body h1 {
 body .gameboy {
   position: absolute;
   z-index: 0;
-  background: #dfe3de;
+  background: #d4d9d3;
   min-width: 22rem;
   min-height: 34rem;
   top: 6rem;
   left: 20rem;
-  border-radius: 1rem 1rem 7rem 1rem;
+  border-radius: 0.75rem 0.75rem 6rem 0.75rem;
   box-shadow: -5px 7px 13px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 4px 4px 7px 8px rgba(58, 66, 56, 0.3);
+  box-shadow: inset 4px 4px 7px 8px rgba(58, 66, 56, 0.375);
+}
+body .screen-border {
+  position: absolute;
+  z-index: 1;
+  background: #767e93;
+  border-radius: 1rem 1rem 4rem 1rem;
+  border: 0.75px solid #42454D;
+  min-width: 18rem;
+  min-height: 14rem;
+  top: 8.5rem;
+  left: 22.25rem;
 }
