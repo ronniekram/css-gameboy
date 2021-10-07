@@ -66,9 +66,9 @@ body {
 
     .arrow {
       background: $direction;
-      height: 5rem;
+      height: 5.5rem;
       position: absolute;
-      width: 1.75rem;
+      width: 2rem;
       border-radius: .45rem;
       // border: 1px solid #111118;
       -webkit-box-shadow: -6px 7px 5px -4px rgba(17,17,24,0.5); 
@@ -78,11 +78,11 @@ body {
       &::after {
         background: $direction;
         content: '';
-        height: 1.75rem;
-        left: -1.6rem;
+        height: 2rem;
+        left: -1.7rem;
         position: absolute;
-        top: 1.5rem;
-        width: 5rem;
+        top: 1.75rem;
+        width: 5.5rem;
         border-radius: .45rem;
         // border: 1px solid #111118;
         -webkit-box-shadow: -6px 6px 5px -4px rgba(17,17,24,0.5); 
@@ -92,35 +92,52 @@ body {
 
     .circle {
       background: transparent;
-      opacity: .08;
+      opacity: .2;
       position: absolute;
       content: '';
-      width: 1rem;
-      height: 1rem;
+      width: 1.25rem;
+      height: 1.25rem;
       left: .4rem;
-      top: 1.8rem;
+      top: 2.05rem;
       border-radius: 50%;
-      border: 1px solid white;
-      -webkit-box-shadow: inset 9px -7px 12px -8px rgba(255,255,255,0.4); 
-      box-shadow: inset 9px -7px 12px -8px rgba(255,255,255,0.4);
+      border: 1px solid rgb(102,104,143);
+      -webkit-box-shadow: inset 11px -8px 7px -8px rgba(219,220,230,0.65); 
+      box-shadow: inset 11px -8px 7px -8px rgba(219,220,230,0.65);
     }
   }
 
   .buttons {
+    background-color: #E0E3DE;
     display: flex;
+    position: absolute;
+    width: fit-content;
+    left: 33rem;
+    top: 29rem;
+    padding: .15rem;
+    border-radius: 2rem;
+    transform: rotate(-35deg);
+    -webkit-box-shadow: inset -8px 13px 8px -8px rgba(162,171,156,0.95); 
+    box-shadow: inset -8px 13px 8px -8px rgba(162,171,156,0.95);
 
     div {
+      margin: .45rem;
       background-color: $buttons;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2.7rem;
+      height: 2.7rem;
       border: .5px solid $direction;
       border-radius: 50%;
-      -webkit-box-shadow: -4px 8px 11px -3px rgba(34,35,48,0.7); 
-      box-shadow: -4px 8px 11px -3px rgba(34,35,48,0.7);
+      -webkit-box-shadow: -8px 9px 8px -6px rgba(0,0,0,0.5),
+        inset -8px 9px 8px -8px #E1A3BD; 
+      box-shadow: -8px 9px 8px -6px rgba(0,0,0,0.5),
+        inset -8px 9px 8px -8px #E1A3BD;
     }
 
   }
 
 }
+
+
+// -webkit-box-shadow: inset -8px 9px 8px -6px #D784A6; 
+// box-shadow: inset -8px 9px 8px -6px #D784A6;
 
 // border-radius: TL, TR, BR, BL

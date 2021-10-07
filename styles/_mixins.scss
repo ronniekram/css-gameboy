@@ -4,9 +4,11 @@
 
 @mixin body-shadow {
   -webkit-box-shadow: -14px 22px 24px 16px rgba(0,0,0,0.35),
-    inset 5px -5px 9px 0px rgba(78,87,76,0.95); 
+    inset 5px -5px 9px 0px rgba(78,87,76,0.95),
+    inset -13px 18px 10px -7px rgba(234,236,233,0.95); 
   box-shadow: -14px 22px 24px 16px rgba(0,0,0,0.35),
-    inset 5px -5px 9px 0px rgba(78,87,76,0.95);
+    inset 5px -5px 9px 0px rgba(78,87,76,0.95),
+    inset -13px 18px 10px -7px rgba(234,236,233,0.95);
 
 }
 
