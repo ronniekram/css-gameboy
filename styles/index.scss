@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  position: relative;
+  background: $background;
+  color: white;
+  min-height: 100vh;
+  font-family: $font;
+  font-size: 1.75rem;
+  text-align: center;
+
+  h1 {
+    margin: auto;
+    padding: .5rem;
+    letter-spacing: 1px;
+    @include shadow-pop;
+  }
+
+  .gameboy {
+    // margin: auto;
+    position: absolute;
+    z-index: 0;
+    background: $body;
+    min-width: 22rem;
+    min-height: 34rem;
+    top: 6rem;
+    left: 20rem;
+    @include body-border;
+    @include body-shadow;
+  }
+
+}
+
+// border-radius: TL, TR, BR, BL

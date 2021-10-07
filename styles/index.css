@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+/**
+ * ----------------------------------------
+ * animation text-shadow-pop-bl
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-shadow-pop-bl {
+  0% {
+    text-shadow: 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px 1px #181922, -2px 2px #181922, -3px 3px #181922, -4px 4px #181922, -5px 5px #181922, -6px 6px #181922, -7px 7px #181922, -8px 8px #181922;
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+@keyframes text-shadow-pop-bl {
+  0% {
+    text-shadow: 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922, 0 0 #181922;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px 1px #181922, -2px 2px #181922, -3px 3px #181922, -4px 4px #181922, -5px 5px #181922, -6px 6px #181922, -7px 7px #181922, -8px 8px #181922;
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  position: relative;
+  background: #c82d32;
+  color: white;
+  min-height: 100vh;
+  font-family: "VT323";
+  font-size: 1.75rem;
+  text-align: center;
+}
+body h1 {
+  margin: auto;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  -webkit-animation: text-shadow-pop-bl 0.7s ease-in-out both;
+  animation: text-shadow-pop-bl 0.7s ease-in-out both;
+}
+body .gameboy {
+  position: absolute;
+  z-index: 0;
+  background: #dfe3de;
+  min-width: 22rem;
+  min-height: 34rem;
+  top: 6rem;
+  left: 20rem;
+  border-radius: 1rem 1rem 7rem 1rem;
+  box-shadow: -5px 7px 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 4px 4px 7px 8px rgba(58, 66, 56, 0.3);
+}
