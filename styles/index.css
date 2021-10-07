@@ -53,18 +53,67 @@ body .gameboy {
   min-height: 34rem;
   top: 6rem;
   left: 20rem;
-  border-radius: 0.75rem 0.75rem 6rem 0.75rem;
-  box-shadow: -5px 7px 13px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 4px 4px 7px 8px rgba(58, 66, 56, 0.375);
+  border: 1px solid #767e93;
+  border-radius: 0.75rem 0.75rem 5rem 0.75rem;
+  box-shadow: -10px 12px 16px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 8px 8px 13px -5px rgba(0, 0, 0, 0.5);
 }
 body .screen-border {
   position: absolute;
   z-index: 1;
   background: #767e93;
-  border-radius: 1rem 1rem 4rem 1rem;
+  border-radius: 1rem 1rem 3rem 1rem;
   border: 0.75px solid #42454D;
   min-width: 18rem;
   min-height: 14rem;
   top: 8.5rem;
   left: 22.25rem;
+}
+body .screen-border .screen {
+  position: absolute;
+  margin: 1.25rem 2.8rem;
+  background-color: #8CA117;
+  min-height: 80%;
+  min-width: 67%;
+  border-radius: 0.25rem;
+  border: 0.75px solid #2F3608;
+  box-shadow: inset -3px 7px 7px 6px rgba(47, 54, 8, 0.4);
+}
+body .directional {
+  position: absolute;
+  z-index: 1;
+  top: 26rem;
+  left: 24rem;
+}
+body .directional .arrow {
+  background: #222330;
+  height: 5rem;
+  position: absolute;
+  width: 1.75rem;
+  border-radius: 0.5rem;
+  box-shadow: -6px 7px 5px -4px rgba(17, 17, 24, 0.5);
+}
+body .directional .arrow::after {
+  background: #222330;
+  content: "";
+  height: 1.75rem;
+  left: -1.6rem;
+  position: absolute;
+  top: 1.5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: -6px 6px 5px -4px rgba(17, 17, 24, 0.5);
+}
+body .directional .circle {
+  background: transparent;
+  opacity: 0.08;
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  left: 0.4rem;
+  top: 1.8rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: inset 9px -7px 12px -8px rgba(255, 255, 255, 0.4);
 }
