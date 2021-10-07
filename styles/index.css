@@ -39,8 +39,7 @@ body {
   text-align: center;
 }
 body h1 {
-  margin: auto;
-  padding: 0.5rem;
+  margin-top: 1rem;
   letter-spacing: 1px;
   -webkit-animation: text-shadow-pop-bl 0.7s ease-in-out both;
   animation: text-shadow-pop-bl 0.7s ease-in-out both;
@@ -51,12 +50,11 @@ body .gameboy {
   background: #d4d9d3;
   min-width: 22rem;
   min-height: 34rem;
-  top: 6rem;
+  top: 7rem;
   left: 20rem;
-  border: 1px solid #767e93;
+  border: 1px solid #222330;
   border-radius: 0.75rem 0.75rem 5rem 0.75rem;
-  box-shadow: -10px 12px 16px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 8px 8px 13px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: -14px 22px 24px 16px rgba(0, 0, 0, 0.35), inset 5px -5px 9px 0px rgba(78, 87, 76, 0.95);
 }
 body .screen-border {
   position: absolute;
@@ -82,7 +80,7 @@ body .screen-border .screen {
 body .directional {
   position: absolute;
   z-index: 1;
-  top: 26rem;
+  top: 27rem;
   left: 24rem;
 }
 body .directional .arrow {
@@ -90,7 +88,7 @@ body .directional .arrow {
   height: 5rem;
   position: absolute;
   width: 1.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0.45rem;
   box-shadow: -6px 7px 5px -4px rgba(17, 17, 24, 0.5);
 }
 body .directional .arrow::after {
@@ -101,7 +99,7 @@ body .directional .arrow::after {
   position: absolute;
   top: 1.5rem;
   width: 5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.45rem;
   box-shadow: -6px 6px 5px -4px rgba(17, 17, 24, 0.5);
 }
 body .directional .circle {
@@ -116,4 +114,15 @@ body .directional .circle {
   border-radius: 50%;
   border: 1px solid white;
   box-shadow: inset 9px -7px 12px -8px rgba(255, 255, 255, 0.4);
+}
+body .buttons {
+  display: flex;
+}
+body .buttons div {
+  background-color: #9a325d;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.5px solid #222330;
+  border-radius: 50%;
+  box-shadow: -4px 8px 11px -3px rgba(34, 35, 48, 0.7);
 }

@@ -3,17 +3,17 @@
 }
 
 @mixin body-shadow {
-  -webkit-box-shadow: -10px 12px 16px 0px rgba(0,0,0,0.7); 
-  box-shadow: -10px 12px 16px 0px rgba(0,0,0,0.7);
-  -webkit-box-shadow: inset 8px 8px 13px -5px rgba(0,0,0,0.5); 
-  box-shadow: inset 8px 8px 13px -5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -14px 22px 24px 16px rgba(0,0,0,0.35),
+    inset 5px -5px 9px 0px rgba(78,87,76,0.95); 
+  box-shadow: -14px 22px 24px 16px rgba(0,0,0,0.35),
+    inset 5px -5px 9px 0px rgba(78,87,76,0.95);
+
 }
 
 @mixin shadow-pop {
   -webkit-animation: text-shadow-pop-bl 0.7s ease-in-out both;
   animation: text-shadow-pop-bl 0.7s ease-in-out both;
 }
-
 
 
 /**

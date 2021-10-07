@@ -16,8 +16,7 @@ body {
   text-align: center;
 
   h1 {
-    margin: auto;
-    padding: .5rem;
+    margin-top: 1rem;
     letter-spacing: 1px;
     @include shadow-pop;
   }
@@ -28,9 +27,9 @@ body {
     background: $body;
     min-width: 22rem;
     min-height: 34rem;
-    top: 6rem;
+    top: 7rem;
     left: 20rem;
-    border: 1px solid $screenBorder;
+    border: 1px solid $direction;
     @include body-border;
     @include body-shadow;
   }
@@ -62,7 +61,7 @@ body {
   .directional {
     position: absolute;
     z-index: 1;
-    top: 26rem;
+    top: 27rem;
     left: 24rem;
 
     .arrow {
@@ -70,7 +69,7 @@ body {
       height: 5rem;
       position: absolute;
       width: 1.75rem;
-      border-radius: .5rem;
+      border-radius: .45rem;
       // border: 1px solid #111118;
       -webkit-box-shadow: -6px 7px 5px -4px rgba(17,17,24,0.5); 
       box-shadow: -6px 7px 5px -4px rgba(17,17,24,0.5);
@@ -84,7 +83,7 @@ body {
         position: absolute;
         top: 1.5rem;
         width: 5rem;
-        border-radius: .5rem;
+        border-radius: .45rem;
         // border: 1px solid #111118;
         -webkit-box-shadow: -6px 6px 5px -4px rgba(17,17,24,0.5); 
         box-shadow: -6px 6px 5px -4px rgba(17,17,24,0.5);
@@ -105,6 +104,21 @@ body {
       -webkit-box-shadow: inset 9px -7px 12px -8px rgba(255,255,255,0.4); 
       box-shadow: inset 9px -7px 12px -8px rgba(255,255,255,0.4);
     }
+  }
+
+  .buttons {
+    display: flex;
+
+    div {
+      background-color: $buttons;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: .5px solid $direction;
+      border-radius: 50%;
+      -webkit-box-shadow: -4px 8px 11px -3px rgba(34,35,48,0.7); 
+      box-shadow: -4px 8px 11px -3px rgba(34,35,48,0.7);
+    }
+
   }
 
 }
